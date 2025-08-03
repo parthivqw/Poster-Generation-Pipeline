@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+qrcode
+diffusers
+transformers
+torch
+pydantic
