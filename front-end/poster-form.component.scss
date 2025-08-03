@@ -1,0 +1,59 @@
+/* poster-form.component.scss */
+
+/* Overall layout adjustments */
+.poster-generator {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f8fafc, #e0e7ff);
+  /* Updated from plain white */
+  min-height: 100vh;
+}
+
+/* Textarea and input smooth interactions */
+textarea,
+input {
+  transition: all 0.2s ease-in-out;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
+  border-color: #6366f1;
+}
+
+/* Buttons */
+button {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Poster preview container */
+.poster-preview {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Loading shimmer for image */
+.loading-skeleton {
+  height: 512px;
+  width: 100%;
+  background: linear-gradient(90deg, #f3f3f3 25%, #ecebeb 50%, #f3f3f3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 1rem;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
